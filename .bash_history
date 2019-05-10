@@ -336,3 +336,186 @@ rm .proc.c.swp
 vim .proc.c
 ls
 vim proc.c
+cd xv6
+ls la
+ls -la
+ls -a
+cd user.h
+vim user.h
+vim syscall.c
+vim syscall.h
+vim syscall.c
+vim user.h
+vim sysproc.c
+geany sysproc.c
+ls
+vim usys.S
+vim defs.h
+vim proc.c
+vim proc.h
+vim user.h
+ls
+vim syscall.c
+vim syscall.h
+vim sysproc.c
+vim usys.S
+vim defs.h
+make clean
+make clean qemu
+make clean qemu-nox
+make clean
+zip -r lab1_jkwon031_bhaye003.zip xv6-public/
+..
+cd ..
+ls
+zip -r lab1_jkwon031_bhaye003.zip xv6-public/
+zip -r lab1_jkwon031_bhaye003.zip xv6/
+ls
+scp lab1_jkwon031_bhaye003.zip D:/
+scp lab1_jkwon031_bhaye003.zip D:
+scp lab1_jkwon031_bhaye003.zip jkwon031@remote: D:
+scp lab1_jkwon031_bhaye003.zip jkwon031@remote: Desktop
+scp lab1_jkwon031_bhaye003.zip jkwon031@remote: D:
+
+scp lab1_jkwon031_bhaye003.zip jkwon031@remote: D:\Desktop
+scp lab1_jkwon031_bhaye003.zip jkwon031@remote: 
+ls
+git add.
+git add .
+git init
+git add .
+git commit -m "First commit"
+git remote add origin https://github.com/jkwon031/CS_153.git
+git remote -v
+git push origin master
+ls
+cd xv6
+ls
+vim proc.c
+exit
+cd xv6
+ls
+vim proc.c
+vim proc.h
+vim sysproc.c
+vim proc.h
+vim sysproc.h
+vim syscall.h
+vim user.h
+vim syscall.c
+vim usys.S
+vim defs.h
+vim sysproc.c
+vim proc.c
+geany
+touch lab2.c
+geany lab2.c
+vim Makefile 
+cd xv6
+ls
+vim Makefile
+vim proc.c
+make qemu
+vim lab2.c
+make qemu
+vim proc.c
+vim defs.h
+vim proc.h
+vim syscall.h
+vim syscall.c
+vim sysproc.c 
+make qemu
+make qemu-nox
+ls
+vim proc.c
+make qemu-nox
+vim proc.c
+make qemu-nox
+vim proc.c
+make qemu-nox
+vim proc.c
+make qemu-nox
+exit
+cd xxv65
+cd xv6
+make clean qemu-nox
+vim proc.c
+vim sysproc.c
+vim proc.c
+exit
+ls
+cd xv6
+vim proc.c
+make clean qemu-nox
+exit
+ls
+cd xv6
+ls
+vim proc.h
+vim proc.c
+vim Makefile 
+make clean qemu-nox
+vim proc.c
+vim Makefile 
+make clean qemu-nox
+ls
+vim sysproc.c
+cd xv6
+vim proc.c
+make qemu-nox
+vim Makefile 
+vim proc.c
+make qemu-nox
+vim proc.c
+make qemu-nox
+vim proc.c
+make qemu-nox
+vim proc.c
+make qemu-nox
+vim proc.c
+make qemu-nox
+vim proc.c
+make qemu-nox
+vim proc.c
+make qemu-nox
+vim proc.c
+make qemu-nox
+vim proc.c
+cd xv6
+vim proc.c
+cd xv6
+ls
+ls -la
+ls -a
+rm -rf .proc.c.swp 
+ls
+cd xv6
+ls
+vim proc.c
+vim proc.h
+vim user.h
+vim syscall.c
+vim syscall.h
+vim sysproc.c
+vim usys.S
+vim defs.h
+vim Makefile
+exit
+ls
+cd xv6
+make clean
+ls
+makeclean
+make clean
+cd ..
+make clean
+cd xv6
+ls
+make 
+make clean
+clear
+make clean
+ls
+cd ..
+ls
+exit
