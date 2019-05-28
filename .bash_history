@@ -519,3 +519,165 @@ ls
 cd ..
 ls
 exit
+ls
+cd xv6
+ls
+vim lab2.c
+ls -la
+ls
+clear
+ls
+ls- la
+ls a
+ls -a
+cd cuth
+cd ..
+ls
+vim xv6
+cd xv6
+ls
+make clean
+make clean qemu-nox
+ls
+make clean
+ls
+cd ..
+ls
+zip -r lab2_jkwon031_bhaye003.zip
+ls
+zip -r lab2_jkwon031_bhaye003.zip xv6
+ls
+git add .
+git commit -m "Lab 2 is done"
+git push origin master
+jkwon031
+cd xv6
+ls
+git add .
+git commit -m "Lab 2 updated"
+git push origin master
+cd xv6
+ls -a
+rm .exec.c.swp 
+ls
+vim exec.c
+exit
+cd xv6
+ls
+vim exec.c 
+vim memlayout.h 
+vim exec.c 
+cd xv6
+ls
+vim exec.c
+vim memlayout.h 
+vim exec.c
+vim memlayout.h 
+vim exec.c
+cd xv6
+ls
+make clean
+make clean qemu-nox
+ls
+cd xv6
+ls
+vim exec.c
+cd xv6
+ls
+vim trap.c
+rm .trap.c.swp 
+vim trap.c
+cd ..
+ls
+cd xv6
+vim trap.c
+exit
+cd xv6
+rm .syscall.c.swp 
+vim syscall.c
+rm .exec.c.swp 
+vim exec.c
+ls
+cd xv6
+ls
+vim proc.c
+vim exec.c
+vim syscall.c
+vim sysfile.c 
+grep "sz"
+grep -r "sz"
+vim syscall.c
+grep -r copyuvm
+vim vm.c
+cd xv6
+rm .exec.c.swp 
+rm .vm.c.swp 
+cd
+ls
+cd xv6
+ls
+vim vm.c
+vim proc.h
+vim trap.c
+vim traps.h 
+vim trap.c
+vim exec.c
+vim trap.c
+vim proc.h
+vim trap.c
+vim traps.h 
+vim vm.c 
+vim trap.c
+vim proc.h
+grep -r priority
+vim proc.c
+grep -r status
+wq
+vim proc.c
+vim vm.c 
+vim proc.c
+vim exe.c
+vim exec.c
+vim exe.c
+vim exec.c
+vim vm.c 
+cd xv6
+ls
+rm .vm.c.swp 
+ls
+vim trap.c
+vim vim.c
+vim vm.c
+vim exec.c
+vim trap.c
+vim vm.c
+vim exec.c
+vim vm.c
+geany vm.c
+vim vm.c
+vim trap.c
+vim vm.c
+vim trap.c
+geany trap.c
+make clean qemu-nox
+vim vm.c
+make clean qemu-nox
+vim vm.c
+touch lab3.c
+geany lab3.c
+make clean qemu-nox
+vim Makefile 
+make clean qemu-nox
+vim vm.c
+make clean qemu-nox
+vim trap.c
+cd xv6
+ls
+make clean qemu-nox
+exit
+cd xv6
+ls
+make clean qemu-nox
+ls
+vim trap.c
+make clean qemu-nox
