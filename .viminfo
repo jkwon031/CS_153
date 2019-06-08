@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/copyuvm
+~MSle0~/curproc
 
 # Last Substitute String:
 $
@@ -24,6 +24,8 @@ $
 :WQ
 
 # Search String History (newest to oldest):
+?/fork
+?/curproc
 ?/copyuvm
 ?/sz
 ?/allocuvm
@@ -67,34 +69,65 @@ $
 	p
 
 # File marks:
-'0  28  2  ~/xv6/exec.c
-'1  94  2  ~/xv6/trap.c
-'2  111  16  ~/xv6/trap.c
-'3  317  0  ~/xv6/vm.c
-'4  75  2  ~/xv6/trap.c
-'5  72  2  ~/xv6/trap.c
-'6  341  2  ~/xv6/vm.c
-'7  186  6  ~/xv6/Makefile
-'8  76  9  ~/xv6/trap.c
-'9  342  23  ~/xv6/vm.c
+'0  98  0  ~/lab4/lab2-f17/shm.c
+'1  80  0  ~/lab4/lab2-f17/shm.c
+'2  48  0  ~/lab4/lab2-f17/shm.c
+'3  48  0  ~/lab4/lab2-f17/shm_cnt.c
+'4  84  5  ~/lab4/lab2-f17/shm.c
+'5  47  4  ~/lab4/lab2-f17/shm_cnt.c
+'6  7  0  ~/lab4/lab2-f17/uspinlock.h
+'7  1  0  ~/lab4/lab2-f17/uspinlock.c
+'8  42  0  ~/lab4/lab2-f17/shm_cnt.c
+'9  356  2  ~/xv6/vm.c
 
 # Jumplist (newest first):
+-'  98  0  ~/lab4/lab2-f17/shm.c
+-'  80  0  ~/lab4/lab2-f17/shm.c
+-'  48  3  ~/lab4/lab2-f17/shm.c
+-'  84  2  ~/lab4/lab2-f17/shm.c
+-'  48  0  ~/lab4/lab2-f17/shm_cnt.c
+-'  47  3  ~/lab4/lab2-f17/shm_cnt.c
+-'  51  0  ~/lab4/lab2-f17/shm.c
+-'  1  0  ~/lab4/lab2-f17/shm.c
+-'  42  4  ~/lab4/lab2-f17/shm_cnt.c
+-'  7  0  ~/lab4/lab2-f17/uspinlock.h
+-'  1  0  ~/lab4/lab2-f17/uspinlock.h
+-'  1  0  ~/lab4/lab2-f17/uspinlock.c
+-'  1  0  ~/lab4/lab2-f17/shm_cnt.c
+-'  356  2  ~/xv6/vm.c
+-'  586  2  ~/xv6/proc.c
+-'  593  2  ~/xv6/proc.c
+-'  115  0  ~/xv6/exec.c
+-'  343  15  ~/xv6/sysfile.c
+-'  3  2  ~/xv6/sysfile.c
+-'  141  2  ~/xv6/sysfile.c
+-'  37  0  ~/xv6/syscall.c
+-'  28  0  ~/xv6/syscall.c
+-'  186  1  ~/xv6/Makefile
+-'  131  0  ~/xv6/sysproc.c
+-'  1  0  ~/xv6/sysproc.c
+-'  317  0  ~/xv6/vm.c
+-'  88  2  ~/xv6/trap.c
+-'  94  2  ~/xv6/trap.c
+-'  24  0  ~/xv6/syscall.h
+-'  1  0  ~/xv6/syscall.c
+-'  149  0  ~/xv6/syscall.c
+-'  91  2  ~/xv6/proc.c
+-'  61  0  ~/xv6/proc.h
+-'  58  0  ~/xv6/proc.h
+-'  85  0  ~/xv6/exec.c
 -'  28  2  ~/xv6/exec.c
 -'  63  2  ~/xv6/exec.c
--'  94  2  ~/xv6/trap.c
 -'  111  2  ~/xv6/trap.c
 -'  75  2  ~/xv6/trap.c
--'  317  0  ~/xv6/vm.c
 -'  344  4  ~/xv6/vm.c
 -'  72  2  ~/xv6/trap.c
 -'  341  2  ~/xv6/vm.c
--'  186  6  ~/xv6/Makefile
 -'  208  0  ~/xv6/Makefile
 -'  76  4  ~/xv6/trap.c
 -'  74  4  ~/xv6/trap.c
 -'  342  4  ~/xv6/vm.c
 -'  339  2  ~/xv6/vm.c
--'  115  0  ~/xv6/exec.c
 -'  20  2  ~/xv6/exec.c
 -'  315  0  ~/xv6/vm.c
 -'  1  0  ~/xv6/vim.c
@@ -102,12 +135,9 @@ $
 -'  68  1  ~/xv6/exec.c
 -'  1  0  ~/xv6/exe.c
 -'  60  2  ~/xv6/exec.c
--'  91  18  ~/xv6/proc.c
 -'  326  4  ~/xv6/vm.c
 -'  92  0  ~/xv6/proc.c
 -'  93  2  ~/xv6/proc.c
--'  61  0  ~/xv6/proc.h
--'  58  0  ~/xv6/proc.h
 -'  38  0  ~/xv6/traps.h
 -'  54  2  ~/xv6/proc.h
 -'  92  4  ~/xv6/exec.c
@@ -118,12 +148,9 @@ $
 -'  348  2  ~/xv6/vm.c
 -'  81  0  ~/xv6/vm.c
 -'  1  0  ~/xv6/vm.c
--'  149  0  ~/xv6/syscall.c
 -'  5  0  ~/xv6/syscall.c
--'  141  0  ~/xv6/sysfile.c
 -'  1  0  ~/xv6/sysfile.c
 -'  89  0  ~/xv6/syscall.c
--'  1  0  ~/xv6/syscall.c
 -'  114  0  ~/xv6/syscall.c
 -'  1  13  ~/xv6/exec.c
 -'  67  4  ~/xv6/exec.c
@@ -145,98 +172,104 @@ $
 -'  121  0  ~/xv6/defs.h
 -'  124  0  ~/xv6/defs.h
 -'  15  0  ~/xv6/usys.S
--'  1  1  ~/xv6/sysproc.c
 -'  64  1  ~/xv6/sysproc.c
--'  24  0  ~/xv6/syscall.h
 -'  109  0  ~/xv6/syscall.c
 -'  7  0  ~/xv6/user.h
 -'  9  0  ~/xv6/user.h
 -'  73  0  ~/xv6/proc.c
 -'  271  0  ~/xv6/proc.c
--'  421  6  ~/xv6/proc.c
--'  385  2  ~/xv6/proc.c
--'  1  0  ~/proc.c
--'  429  6  ~/xv6/proc.c
--'  363  1  ~/xv6/proc.c
--'  400  6  ~/xv6/proc.c
--'  410  6  ~/xv6/proc.c
--'  405  1  ~/xv6/proc.c
--'  437  0  ~/xv6/proc.c
--'  77  0  ~/xv6/sysproc.c
--'  20  2  ~/xv6/sysproc.c
--'  373  0  ~/xv6/proc.c
--'  185  1  ~/xv6/Makefile
--'  452  2  ~/xv6/proc.c
--'  406  2  ~/xv6/proc.c
--'  361  0  ~/xv6/proc.c
--'  63  1  ~/xv6/sysproc.c
--'  113  0  ~/xv6/syscall.c
--'  53  2  ~/xv6/proc.h
--'  125  0  ~/xv6/defs.h
--'  450  0  ~/xv6/proc.c
--'  40  0  ~/xv6/lab2.c
--'  440  0  ~/xv6/proc.c
--'  106  0  ~/xv6/Makefile
--'  203  0  ~/xv6/Makefile
 
 # History of marks within files (newest to oldest):
 
-> ~/xv6/exec.c
-	"	28	2
-	^	92	5
-	.	68	2
-	+	66	52
-	+	69	14
-	+	70	19
-	+	66	52
-	+	68	2
+> ~/lab4/lab2-f17/shm.c
+	"	98	0
+	^	84	6
+	.	84	6
+	+	40	28
+	+	41	0
+	+	41	0
+	+	34	1
+	+	39	1
+	+	40	1
+	+	69	1
+	+	41	37
+	+	52	0
+	+	46	117
+	+	43	1
+	+	42	31
+	+	37	10
+	+	42	2
+	+	45	20
+	+	46	58
+	+	51	1
+	+	47	38
+	+	49	25
+	+	39	3
+	+	49	29
+	+	51	0
+	+	52	7
+	+	68	0
+	+	54	25
+	+	59	64
+	+	67	1
+	+	60	3
+	+	50	8
+	+	62	37
+	+	65	8
+	+	70	28
+	+	84	28
+	+	85	0
+	+	81	1
+	+	84	1
+	+	93	1
+	+	85	37
+	+	92	0
+	+	86	34
+	+	87	41
+	+	91	1
+	+	90	36
+	+	91	3
+	+	92	0
+	+	94	28
+	+	36	15
+	+	40	6
+	+	82	8
+	+	84	6
+	y	34	0
 
-> ~/xv6/trap.c
-	"	94	2
-	^	72	1
-	.	72	0
-	+	70	1
-	+	74	91
-	+	74	3
-	+	75	9
-	+	74	12
-	+	75	4
-	+	76	3
-	+	75	14
-	+	74	79
-	+	75	7
-	+	74	97
-	+	76	10
-	+	71	30
-	+	73	3
-	+	72	0
-	i	74	35
-	y	74	35
+> ~/lab4/lab2-f17/shm_cnt.c
+	"	48	0
+
+> ~/lab4/lab2-f17/uspinlock.h
+	"	7	0
+
+> ~/lab4/lab2-f17/uspinlock.c
+	"	1	0
 
 > ~/xv6/vm.c
-	"	317	0
+	"	356	2
 	^	325	55
 	.	325	48
 	+	325	48
 
-> ~/xv6/Makefile
-	"	186	6
-	^	186	7
-	.	186	6
-	+	184	6
-	+	181	1
-	+	223	8
-	+	185	7
-	+	186	6
-
-> ~/xv6/vim.c
-	"	1	0
-
-> ~/xv6/exe.c
-	"	1	0
+> ~/xv6/syscall.c
+	"	75	2
+	^	89	26
+	.	22	83
+	+	89	23
+	+	111	22
+	+	89	23
+	+	113	25
+	+	106	28
+	+	107	33
+	+	114	33
+	+	66	100
+	+	37	41
+	+	40	42
+	+	22	83
 
 > ~/xv6/proc.c
-	"	91	18
+	"	299	0
 	^	91	19
 	.	92	0
 	+	234	0
@@ -340,6 +373,16 @@ $
 	+	91	19
 	+	92	0
 
+> ~/xv6/exec.c
+	"	115	0
+	^	92	5
+	.	68	2
+	+	66	52
+	+	69	14
+	+	70	19
+	+	66	52
+	+	68	2
+
 > ~/xv6/proc.h
 	"	61	0
 	^	54	15
@@ -348,61 +391,43 @@ $
 	+	53	15
 	+	54	14
 
-> ~/xv6/traps.h
-	"	38	0
-	^	38	1
-	.	38	0
-	+	2	0
-	+	38	0
-
-> ~/xv6/syscall.c
-	"	149	0
-	^	89	26
-	.	22	83
-	+	89	23
-	+	111	22
-	+	89	23
-	+	113	25
-	+	106	28
-	+	107	33
-	+	114	33
-	+	66	100
-	+	37	41
-	+	40	42
-	+	22	83
+> ~/xv6/trap.c
+	"	56	4
+	^	72	1
+	.	72	0
+	+	70	1
+	+	74	91
+	+	74	3
+	+	75	9
+	+	74	12
+	+	75	4
+	+	76	3
+	+	75	14
+	+	74	79
+	+	75	7
+	+	74	97
+	+	76	10
+	+	71	30
+	+	73	3
+	+	72	0
+	i	74	35
+	y	74	35
 
 > ~/xv6/sysfile.c
-	"	141	0
+	"	343	15
 
-> ~/xv6/memlayout.h
-	"	8	0
-
-> ~/xv6/lab2.c
-	"	1	0
-	^	1	14
-	.	55	6
-	+	40	7
-	+	55	6
-
-> ~/xv6/defs.h
-	"	121	0
-	^	124	4
-	.	124	3
-	+	107	23
-	+	123	11
-	+	120	24
-	+	123	26
-	+	124	3
-
-> ~/xv6/usys.S
-	"	15	0
-	^	15	20
-	.	15	19
-	+	14	15
-	+	15	19
+> ~/xv6/Makefile
+	"	186	1
+	^	186	7
+	.	186	6
+	+	184	6
+	+	181	1
+	+	223	8
+	+	185	7
+	+	186	6
 
 > ~/xv6/sysproc.c
-	"	1	1
+	"	131	0
 	^	63	3
 	.	66	9
 	+	17	11
@@ -467,17 +492,35 @@ $
 	+	23	22
 	+	24	25
 
-> ~/xv6/user.h
-	"	7	0
-	^	9	20
-	.	9	20
-	+	6	12
-	+	7	15
-	+	8	27
-	+	9	20
-
-> ~/proc.c
+> ~/xv6/vim.c
 	"	1	0
 
-> ~/xv6/sysproc.h
+> ~/xv6/exe.c
 	"	1	0
+
+> ~/xv6/traps.h
+	"	38	0
+	^	38	1
+	.	38	0
+	+	2	0
+	+	38	0
+
+> ~/xv6/memlayout.h
+	"	8	0
+
+> ~/xv6/lab2.c
+	"	1	0
+	^	1	14
+	.	55	6
+	+	40	7
+	+	55	6
+
+> ~/xv6/defs.h
+	"	121	0
+	^	124	4
+	.	124	3
+	+	107	23
+	+	123	11
+	+	120	24
+	+	123	26
+	+	124	3

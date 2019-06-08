@@ -681,3 +681,181 @@ make clean qemu-nox
 ls
 vim trap.c
 make clean qemu-nox
+ls
+cd xv
+cd xv6
+ls
+make clean qemu-nox
+cd xv6
+ls
+vim vm.c
+make clean qemu-nox
+ls
+vim trap.c
+vim exec.c
+cd ..
+ls
+git add .
+ls
+cd xv6
+git add .
+git commit -m "Lab 3"
+git push origin master
+cd ..
+git commit -m "Lab 3"
+git push origin master
+git .gitmodules
+cd xv6
+ls
+cd ..
+ls
+git rm -- cached xv6
+git rm -- <cached> xv6
+git rm -- cached <xv6>
+cd xv6
+rm -rf .git
+git rm --cached xv6
+ls -a
+make clean
+ls
+git rm --cached
+cd ..
+git add .
+git commit -m "Fix"
+git push origin master
+cd xv6
+git remote -v
+rm -rf git
+rm -rf .git
+cd ..
+git rm --cahced xv6
+git rm --cached xv6
+ls
+git add .
+git commit -m "Fix?"
+git push --all
+ls
+cd xv6
+ls
+make clean qemu-nox
+ls..
+cd ..
+ls
+cd xv6-test
+ls
+make clean qemu-nox
+cd ..
+ls
+cd xv6
+make clean qemu-nox
+ld
+ls
+cd ..
+rm -rf xv6-test/
+ls
+ks
+ls
+cd xv6
+ls
+make clean qemu-nox
+ls
+make clean 
+ls
+make clean
+cd ..
+ls
+zip -r lab3_jkwon031_bhaye003.zip xv6
+ls
+git add .
+git commit -m "Added lab3 zip file"
+git push
+git push origin master
+ls
+cd xv6
+ls
+vim exec.c
+ls
+vim exec.c
+vim proc.h
+ls
+vim proc.h
+vim proc.c
+vim exec.c
+vim syscall.c
+vim syscall.h
+vim trap.c
+vim vm.c
+vim sysproc.c
+vim Makefile 
+vim syscall.c
+grep curproc
+grep "curproc"
+grep
+grep --help
+grep "curproc" all
+grep "curproc" 
+/curproc
+grep -r "curproc"
+vim sysfile.c
+vim exec.c
+vim proc.c
+cd xv6
+ls
+ls -la
+ls -a
+make clean
+ls
+ls -a
+quit
+exit
+cd xv6
+ls
+vm.c
+vim vm.c
+jkwon031
+cd xv6
+ls
+rm .vm.c.swp 
+ls
+vim proc.c
+make clean qemu-nox
+vim vm.c
+vim trap.c
+vim proc.h
+vim exec.c
+vim proc.c
+vim syscall.c
+ls
+cd xv6
+ls
+cd ..
+ls
+mkdir lab4
+ls
+cd lab4
+ls
+git clone https://github.com/naelag/lab2-f17.git
+ls
+cd lab2-f17/
+ls
+vim shm_cnt.c 
+vim uspinlock.c
+vim uspinlock.h
+vim shm_cnt.c 
+vim shm.c 
+make clean qemu-nox
+ls
+vim shm.c 
+make clean qemu-nox
+exit
+ls
+cd lab4
+ls
+cd lab2-f17/
+ls
+vim shm_cnt.c
+vim shm.c
+make clean qemu-nox
+vim shm.c
+make clean qemu-nox
+exit
